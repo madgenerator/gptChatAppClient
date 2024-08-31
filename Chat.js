@@ -28,7 +28,7 @@ const profileNum = localStorage.getItem("profileNum");
 //addEventListner to "userMessage"
 userInput.addEventListener("keydown", messageEnter);
 
-const socket = io();
+const socket = io("https://port-0-chattingapp-lzycyeal2a8e816d.sel4.cloudtype.app/");
 
 function messageEnter(event) {
   if (event.key == "Enter") {
