@@ -29,7 +29,8 @@ const profileNum = localStorage.getItem("profileNum");
 userInput.addEventListener("keydown", messageEnter);
 
 //Change URL for Chatting Server
-const socket = io("https://port-0-gptchatappserver-lzycyeal2a8e816d.sel4.cloudtype.app/");
+//const socket = io("https://port-0-gptchatappserver-lzycyeal2a8e816d.sel4.cloudtype.app/");
+const socket = io("https://ideal-doodle-759vrj9xg7jcr447-3000.app.github.dev/");
 
 function messageEnter(event) {
   if (event.key == "Enter") {
