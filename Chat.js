@@ -38,6 +38,16 @@ function messageEnter(event) {
   }
 }
 
+function language1() {
+  console.log("language1 clicked");
+  socket.emit("setLanguage", "japanese");
+}
+
+function language2() {
+  console.log("language2 clicked");
+  socket.emit("setLanguage", "korean");
+}
+
 //message send function
 function sendMessage() {
   console.log("send button clicked");
