@@ -41,7 +41,7 @@ userInput.addEventListener("keydown", messageEnter);
 const socket = io("https://port-0-gptchatappserver-lzycyeal2a8e816d.sel4.cloudtype.app/");
 
 function messageEnter(event) {
-  console.log("EEEEEEEEE");
+  console.log("EEEEEEEEㅗㅗE");
   if (event.key == "Enter") {
     console.log("Enter button pressed.");
     sendMessage();
