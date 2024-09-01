@@ -29,6 +29,11 @@ const lanSelect = document.getElementById("languageSelect");
 console.log(lanSelect);
 lanSelect.addEventListener("change",setLanguage);
 
+//language select
+const lanSelectBtn = document.getElementById("sentLanBtn");
+console.log(lanSelectBtn);
+lanSelect.addEventListener("click",setLanguage);
+
 //addEventListner to "userMessage"
 userInput.addEventListener("keydown", messageEnter);
 
