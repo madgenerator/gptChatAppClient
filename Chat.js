@@ -29,11 +29,6 @@ const lanSelect = document.getElementById("languageSelect");
 console.log(lanSelect);
 lanSelect.addEventListener("change",setLanguage);
 
-//language select
-const lanSelectBtn = document.getElementById("sentLanBtn");
-console.log(lanSelectBtn);
-lanSelect.addEventListener("click",setLanguage);
-
 //addEventListner to "userMessage"
 userInput.addEventListener("keydown", messageEnter);
 
@@ -41,7 +36,6 @@ userInput.addEventListener("keydown", messageEnter);
 const socket = io("https://port-0-gptchatappserver-lzycyeal2a8e816d.sel4.cloudtype.app/");
 
 function messageEnter(event) {
-  console.log("EEEEEEEEㅗㅗE");
   if (event.key == "Enter") {
     console.log("Enter button pressed.");
     sendMessage();
