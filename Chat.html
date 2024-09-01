@@ -8,9 +8,6 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/socket.io-client/dist/socket.io.js"></script>
-  <script src="Chat.js"></script>
-
   <div id="titleContainer">
     <span style="margin-right: 10px;">WELCOME TO SECRET CHATTING APP!</span>
     <span style="margin-right: 10px;">
@@ -31,6 +28,9 @@
     <input type="text" id="userMessage">
     <button id="sendButton" onClick="sendMessage()"> send </button>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client/dist/socket.io.js"></script>
+  <script src="./Chat.js"></script>
 
 </body>
 </html>
