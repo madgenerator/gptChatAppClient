@@ -24,6 +24,15 @@ const userID = document.getElementById("userID");
 userID.value = localStorage.getItem("userID");
 userID.disabled = true;
 const profileNum = localStorage.getItem("profileNum");
+//language select
+const lanSelect = document.getElementById("languageSelect");
+lanSelect.addEventListener("change", setLanguage);
+
+function setLanguage(){
+    const selectedLanguage = lanSelect.value;
+    console.log("Language Changed: " + selectedLanguage);
+    socket.emit("setLanguage",selectedLanguage);
+}
 
 //addEventListner to "userMessage"
 userInput.addEventListener("keydown", messageEnter);
@@ -36,16 +45,6 @@ function messageEnter(event) {
     console.log("Enter button pressed.");
     sendMessage();
   }
-}
-
-function language1() {
-  console.log("language1 clicked");
-  socket.emit("setLanguage", "japanese");
-}
-
-function language2() {
-  console.log("language2 clicked");
-  socket.emit("setLanguage", "korean");
 }
 
 //message send function
