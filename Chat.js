@@ -26,6 +26,7 @@ userID.disabled = true;
 const profileNum = localStorage.getItem("profileNum");
 //language select
 const lanSelect = document.getElementById("languageSelect");
+console.log(lanSelect);
 lanSelect.addEventListener("change",setLanguage);
 
 //addEventListner to "userMessage"
