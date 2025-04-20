@@ -12,9 +12,11 @@
 //11. 초기에 아이디 입력
 //12. Profile Image Setup,
 //sendMessage : Profile: profileNum
-
 //13. ID 중복 체크
 //14. 인원 수 제한
+
+//chat Backend URL
+CHAT_SERVER_URL = "https://gptchaterver-f2e656ee43a0.herokuapp.com/";
 
 //get userInput Message
 const userInput = document.getElementById("userMessage");
@@ -33,7 +35,7 @@ lanSelect.addEventListener("change",setLanguage);
 userInput.addEventListener("keydown", messageEnter);
 
 //Change URL for Chatting Server
-const socket = io("https://gptchaterver-f2e656ee43a0.herokuapp.com/");
+const socket = io(CHAT_SERVER_URL);
 
 function messageEnter(event) {
   if (event.key == "Enter") {
